@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import PersonCard from './components/myNewComponent';
-import LightSwitch from './components/lightSwitch';
+import PersonCard from './components/PersoncardInversion';
+// import LightSwitch from './components/lightSwitch';
 
 function App() {
   return (
@@ -9,25 +9,21 @@ function App() {
 
       <button onClick={ () => alert("See you in the Slob my Dudes!") }>Click Me</button>
       
-      <functionClick />
-      <PersonCard fullName={<h1>Tahir, Ali</h1>} age={<h3>Age: 36</h3>} hairColor={<h4>Hair Color: Afro Black</h4>}>
+      <PersonCard lastName={"Tahir"} firstName={"Ali"} age={36} hairColor={"Afro Black"}>
         {/* <p>This is a children of a name card</p> */}
       </PersonCard>
       
-      <PersonCard fullName={<h1>Nearhan, The Animal</h1>} age={<h3>Age: 34</h3>} hairColor={<h4>Hair Color: Brunette</h4>}>
+      <PersonCard lastName={"The Animal"} firstName={"Nearhan"} age={38} hairColor={"Baldy"}>
         {/* <p>This is another children</p> */}
       </PersonCard>
       
-      <PersonCard fullName={<h1>Torie, Es Muy Bueno</h1>} age={<h3>Age: 38</h3>} hairColor={<h4>Hair Color: Brown</h4>}>
+      <PersonCard lastName={"Bueno"} firstName={"Torie"} age={36} hairColor={"Blonde"}>
         {/* <p>This is the children of Andrew Name card</p> */}
       </PersonCard>
       
-      <PersonCard fullName={<h1>My Kitty</h1>} age={<h3>Age: 34</h3>} hairColor={<h4>Hair Color: Black</h4>}>
+      <PersonCard lastName={"Kitten"} firstName={"Kittehhh the"} age={7} hairColor={"white with black spots"}>
         {/* <p>This is a children of Diana's name card</p> */}
       </PersonCard>
-
-      <LightSwitch />
-
 
 
     </div>
